@@ -170,7 +170,7 @@ console.log(sentence3.match(/because/g))
 // Qst. 3
 const sentence5 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
-console.log(sentence5.replace('%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching', 'I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher? This 30 Days Of JavaScript is also the result of love of teaching'))
+console.log(sentence5.replace('%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching', 'I am a teacher, and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. D8oes this motivate you to be a teacher? This 30 Days Of JavaScript is also the result of love of teaching'))
 
 
 // Qst. 4
@@ -179,8 +179,8 @@ let statement = 'He earns 5000 euro from salary per month, 10000 euro annual bon
 
 let salary = statement.match(/\d+/g)
 
-let perMonth = parseInt(salary[0])
-let annualBonus = parseInt(salary[1])
+let perMonth =  parseInt(salary[0])
+let annualBonus =  parseInt(salary[1])
 let coursePayment = parseInt(salary[2])
 
 let total = ((perMonth + coursePayment) * 12) + annualBonus

@@ -481,3 +481,8 @@ let theMonth = 'MAY';
         console.log(printMonth + ' is not a month')
   
    }
+
+
+  //  Week 5
+  // Level 2
+  

@@ -191,13 +191,7 @@ console.log(total)
 
 
 // DAY 3
-// Exercise 1
-/*
-    
-Exercise 2: no 1, 4 - 8, 10, 14 & 15.
-Exercise 3: 1 */
-
-// Qst. 7
+// Exercise 1  Qst. 7
 
 // Qst. i
 const currentYear = new Date()
@@ -245,7 +239,7 @@ console.log(`The area of the triangle is ${area}`)
 
 // Qst. 4
 
-let radius = parseInt(prompt('Enter radius'))
+let radius = 15
 
 const pi = 3.14
 

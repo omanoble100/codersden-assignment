@@ -1,4 +1,8 @@
 
+import { countries } from './countries.js'
+import { webTechs } from './web_techs.js'
+
+
 // Day 2: Exercises
 
 // Exercise: Level 1
@@ -139,10 +143,11 @@ console.log(numGenerator3)
 
 // Qst. 10
 
-let dString = 'JavaScript'
- randomCheck = Math.floor(Math.random() * dString.length);
+// let dChecks = 'JavaScript'
+//   dLength = dChecks.length
+//  randomCheck = Math.floor(Math.random() * dLength);
 
- console.log(randomCheck)
+//  console.log(randomCheck)
 
  
 // Qst. 11
@@ -170,7 +175,7 @@ console.log(sentence3.match(/because/g))
 // Qst. 3
 const sentence5 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
-console.log(sentence5.replace('/%$@#&?;/gi',''))
+console.log(sentence5.replace(/[%$%@;#&!?]/g,''))
 
 
 // Qst. 4
@@ -478,4 +483,113 @@ let theMonth = 'MAY';
 
   //  Week 5
   // Level 2
-  
+
+  // Qst. 1
+   console.log(countries)
+   console.log(webTechs)
+
+  //  Qst. 2
+  let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+  let checkRemove = text.replace(/[.,]/g, "")
+
+  let dInfo = checkRemove.split(" ");
+
+  console.log(dInfo)
+  console.log(dInfo.length)
+
+  // Qst. 3
+  const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+// remove 'Honey' if you are allergic to honey
+// modify Tea to 'Green Tea'
+
+  shoppingCart.unshift('Meat')
+
+  console.log(shoppingCart)
+
+  shoppingCart.push('Sugar')
+
+  console.log(shoppingCart)
+
+  shoppingCart.splice(4,1)
+
+  console.log(shoppingCart)
+
+  shoppingCart.splice(3,1, 'Green Tea')
+
+  console.log(shoppingCart)
+
+  // Qst. 4
+
+  //  In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+
+  if (countries.includes('Ethiopia')){
+    console.log('ETHIOPIA')
+  }else{
+    console.log(countries.push('Ethiopia'))
+  }
+
+//  Qst. 5
+// In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+
+if (webTechs.includes('Sass')){
+  console.log('Sass is a CSS preprocess')
+}else{
+  webTechs.push('Sass')
+  console.log(webTechs)
+}
+
+// Qst. 6
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+
+const fullStack = frontEnd.concat(backEnd)
+
+console.log(fullStack)
+
+
+// LEVEL 3
+
+// Qst. 1
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25,26,25,25]
+
+ages.sort()
+
+console.log(ages)
+
+let checkMax = Math.max(...ages)
+
+console.log(checkMax)
+
+let checkMin = Math.min(...ages)
+console.log(checkMin)
+
+
+// let sum = ages.length / 2;
+let ress ;
+// for (let i = 0; i < ages.length; i++){    
+//     sum = sum + ages[i];
+// }
+if (ages.length % 2 == 0){
+  let sum; let chh; let wee;
+  sum = ages.length / 2
+  // chh = sum + 1
+  //   wee=ages[sum + chh]
+    chh = ages[sum]
+    wee = ages[sum + 1]
+
+    ress = parseInt((chh + wee)/2)
+
+}else {
+  let sum;
+    ages.length/2
+        sum = parseInt(ages.length/2) 
+  ress = ages[sum + 1]
+
+}
+
+
+ console.log(ress)

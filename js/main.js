@@ -554,7 +554,7 @@ console.log(fullStack)
 
 // Qst. 1
 
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25,26,25,25]
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 ages.sort()
 
@@ -576,20 +576,46 @@ let ress ;
 if (ages.length % 2 == 0){
   let sum; let chh; let wee;
   sum = ages.length / 2
-  // chh = sum + 1
-  //   wee=ages[sum + chh]
-    chh = ages[sum]
-    wee = ages[sum + 1]
+      chh = ages[sum]
+      wee = ages[sum -1]
 
-    ress = parseInt((chh + wee)/2)
+    console.log(ress = parseInt((chh + wee)/2))
 
 }else {
-  let sum;
+  let sum; let wek;
     ages.length/2
-        sum = parseInt(ages.length/2) 
-  ress = ages[sum + 1]
+        sum = ages.length/2
+        console.log(sum)
+       wek = Math.floor(sum)
+
+       console.log(wek)
+  ress = ages[wek]
 
 }
 
 
  console.log(ress)
+
+//  Find the average age(all items divided by number of items)
+
+let totalNum=0
+ for (i = 0; i< ages.length; i++){
+
+    totalNum += ages[i]
+     
+  }
+
+  let numOfItems = ages.length
+  
+  let averageNum = totalNum/numOfItems
+
+  console.log(averageNum)
+
+  // Find the range of the ages(max minus min)
+
+    let rangeAges = checkMax - checkMin
+
+    console.log(rangeAges)
+
+    // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+    

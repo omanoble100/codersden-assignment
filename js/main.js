@@ -618,4 +618,33 @@ let totalNum=0
     console.log(rangeAges)
 
     // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+     let compareValue1 = checkMin - averageNum
+
+     let compareValue2 = checkMax - averageNum
+
+     let checkValue = compareValue2 - compareValue1
+
+     console.log(checkValue)
+
+
+     console.log(countries.splice(0, 10))
+
+    // Find the middle country(ies) in the countries array
+
+    let checkMiddleIndex = Math.floor(countries.length/2)
+
+    let middleCountry = countries[checkMiddleIndex]
+  
+    console.log(middleCountry)
+
+    // Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+
+
+
+
+
+
+    // Day 6
     
+
+

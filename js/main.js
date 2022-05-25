@@ -645,6 +645,34 @@ let totalNum=0
 
 
     // Day 6
+
+
+    // Qst. 4
+
+    let str = ""
+    for (let i = 0; i<= 7; i++){
+       for (let j = 0; j < i; j++){
+            str += "#"
+       }
+       str +="\n"
+
+    }
     
+    console.log(str);
 
 
+    // Qst. 5
+    for(let i = 0; i<= 10; i++){
+      console.log(`${i} x ${i} = ${i * i}`)
+    }
+
+
+    // Qst. 10
+    let sum=0
+    for(let i = 0; i < 101; i++){
+        sum = i + sum;
+
+        console.log(sum)
+    }
+
+    console.log(sum)

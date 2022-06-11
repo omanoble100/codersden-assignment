@@ -599,7 +599,7 @@ if (ages.length % 2 == 0){
 //  Find the average age(all items divided by number of items)
 
 let totalNum=0
- for (i = 0; i< ages.length; i++){
+ for (let i = 0; i< ages.length; i++){
 
     totalNum += ages[i]
      
@@ -667,6 +667,26 @@ let totalNum=0
     }
 
 
+
+    // Qst. 6
+    let pattern;
+
+    for (let i = 0; i <= 10; i++){
+    
+        pattern = `${i}, ${i*i}, ${i*i*i} `
+        console.log(pattern)
+    }
+    
+    // Qst. 7 & 8
+    for(let i = 0; i<=100; i++){
+      if(i % 2 == 0){
+          console.log('This is an even number ' + i)
+      }
+      else{
+          console.log('This is an odd number ' + i)
+      }
+  }
+
     // Qst. 10
     let sum=0
     for(let i = 0; i < 101; i++){
@@ -675,4 +695,3 @@ let totalNum=0
         console.log(sum)
     }
 
-    console.log(sum)
